@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+      body { margin: 0; }
+      #info {
+        position: absolute;  /* Se posiciona sobre el canvas 3D */
+        top: 10px;           /* A 10px del borde superior */
+        width: 100%;         /* Ocupa todo el ancho */
+        text-align: center;  /* Texto centrado */
+        z-index: 100;        /* Por encima del canvas */
+        color: white;        /* Color del texto */
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">Hola desde HTML + CSS</div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.174.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.174.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
